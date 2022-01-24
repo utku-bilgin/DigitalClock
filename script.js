@@ -1,17 +1,17 @@
-function clock(){
-    var hours = document.getElementById('hours');
-    var minutes = document.getElementById('minutes');
-    var seconds = document.getElementById('seconds');
-    var ampm = document.getElementById('ampm');
+const clock = () => {
+    let hours = document.getElementById('hours');
+    let minutes = document.getElementById('minutes');
+    let seconds = document.getElementById('seconds');
+    let ampm = document.getElementById('ampm');
 
-    var h = new Date().getHours();
-    var m = new Date().getMinutes();
-    var s = new Date().getSeconds();
-    var am = "AM";
+    let h = new Date().getHours();
+    let m = new Date().getMinutes();
+    let s = new Date().getSeconds();
+    let am = "AM";
     
     if(h > 12){
         h = h - 12;
-        var am = "PM"
+        let am = "PM"
     }
 
     h = (h < 10) ? "0" + h : h
@@ -24,4 +24,4 @@ function clock(){
     ampm.innerHTML = am;
 
 }
-var interval = setInterval(clock, 1000);
+let interval = setInterval(clock, 1000);
