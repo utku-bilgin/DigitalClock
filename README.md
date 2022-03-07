@@ -1,1 +1,1 @@
-<a link='https://utku-bilgin.github.io/DigitalClock.github.io/' >LivePage</a>
+<a href='https://utku-bilgin.github.io/DigitalClock.github.io/' >LivePage</a>
